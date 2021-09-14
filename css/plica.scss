@@ -1,0 +1,981 @@
+$blanco: #fff;
+$negro: #000;
+$rosa: #F668A8;
+
+body {
+    margin: 0 auto;
+    background: #fff;
+    transition: 0.3s ease all;
+
+    &.dark {
+        background: $negro;
+        transition: 0.3s ease all;
+    }
+
+}
+
+.plica-intro {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.plica-intro-img {
+    width: 350px;
+    min-height: 100vh;
+    cursor: pointer;
+    background-image: url("../image/fan-illustration.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease all;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    border: none;
+
+    body.dark & {
+        color: $blanco;
+        background-image: url("../image/fan-illustration-blanco.gif");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 350px;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: transparent;
+        transition: 0.3s ease all;
+
+    }
+
+}
+
+.plica-intro-1 {
+    width: 300px;
+    min-height: 400px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease all;
+
+}
+
+.plica-intro-img-logo {
+    width: 300px;
+    min-height: 400px;
+    cursor: pointer;
+    background-image: url("../image/plica-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease all;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    border: none;
+
+    body.dark & {
+        color: $blanco;
+        background-image: url("../image/plica-logo-blanco.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 300px;
+        background-position-x: center;
+        background-position-y: center;
+        background-color: transparent;
+        transform: rotatez(180deg);
+        transition: 0.3s ease all;
+
+    }
+
+}
+
+/* ------ Switch ------ */
+
+.switch {
+    background-color: #000;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    top: 80px;
+    right: 270px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: 0.3s ease all;
+        box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    }
+
+    &.active {
+        background: #F668A8;
+        color: black;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+
+    }
+
+}
+
+.switch-1 {
+    background-color: #000;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    outline: none;
+    text-align: center;
+    &::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #fff;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: 0.3s ease all;
+        box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+    }
+
+    &.active {
+        background: #F668A8;
+        color: black;
+        &::after {
+            right: 0;
+            left: unset;
+        }
+    }
+    span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: #fff;
+
+    }
+
+}
+
+
+.plica-home {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    body.dark & {
+        background: $negro;
+    }
+
+}
+
+.plica-home-logo {
+    height: 400px;
+    width: 100%;
+    background-image: url("../image/plica-logo-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+
+    body.dark & {
+    height: 400px;
+    width: 100%;
+    background-image: url("../image/plica-logo-blanco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    }
+}
+
+.plica-home-logo:hover {
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/plica2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+
+    body.dark & {
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/plica2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+}
+
+}
+
+.navbar{
+    background-color: $blanco;
+
+    body.dark &{
+        background-color: $negro;
+    }
+}
+
+
+
+.plica-navbar .navbar-nav .nav-link {
+    color: black;
+    font-family: 'menloregular';
+    font-size: 20px;
+    padding-right: 4.5rem;
+
+
+    body.dark &{
+        color:$blanco;
+    }
+
+}
+
+.plica-navbar .navbar-nav .nav-link:hover {
+    color: #F668A8;
+    text-decoration: underline;
+
+    body.dark &{
+        color: #F668A8;
+        text-decoration: underline;
+    }
+}
+
+.navbar-logo{
+    width: 110px;
+    height: 35px;
+    background-image: url("../image/plica-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    background-color: white;
+
+    body.dark &{
+    width: 110px;
+    height: 35px;
+    background-image: url("../image/plica-logo-blanco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transform: rotatez(180deg);
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    background-color: $negro;
+
+        &.active{
+            outline: none;
+            border: none;
+        }
+
+    }
+}
+
+/* ------ Plica Press Section ----- */
+
+.plica-press-section {
+    padding: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plica-press-1 {
+    padding: 1em;
+    width: 100%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .plica-press-text-title{
+    font-family: 'menlobold';
+    font-size: 20px;
+    text-align: center;
+
+} */
+
+.plica-press-text {
+    width: 100%;
+    font-family: 'menlobold';
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+
+    body.dark &{
+        color: $blanco;
+    }
+
+}
+
+.plica-press-text-1 {
+    margin: auto;
+    width: 50%;
+    font-family: 'menloitalic';
+    font-size: 20px;
+    text-align: justify;
+
+    body.dark &{
+        color: $blanco;
+    }
+
+}
+
+.plica-press-text-2 {
+    margin: auto;
+    width: 50%;
+    font-family: 'menloregular';
+    font-size: 20px;
+    text-align: justify;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-press-text-3 {
+    margin: auto;
+    width: 50%;
+    font-family: 'menloitalic';
+    font-size: 15px;
+    text-align: justify;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-press-text-4 {
+    margin-left: -50px;
+    width: 100%;
+    font-family: 'menlobold';
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+
+    body.dark &{
+        color: $blanco;
+    }
+
+}
+
+.plica-press-2 {
+    width: 50%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+/* ----- About Section ----- */
+
+.plica-about-section {
+    padding: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.plica-about-1 {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/arrow-illustration.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/arrow-illustration-blanco.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    }
+
+}
+
+.plica-about-text-tittle {
+    margin-top: 100px;
+    align-items: center;
+    display: flex;
+    color: #F668A8;
+    font-family: 'menlobold';
+    font-size: 30px;
+    text-align: center;
+}
+
+.plica-about-text-brand {
+    margin: auto;
+    font-family: 'menlobold';
+    font-size: 20px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-description-1 {
+    margin: auto;
+    font-family: 'menloregular';
+    font-size: 25px;
+    text-align: justify;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-section-1 {
+    padding: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-text-tittle-1 {
+    margin: auto;
+    display: flex;
+    color: #F668A8;
+    font-family: 'menlobold';
+    font-size: 30px;
+}
+
+.plica-about-text-brand-1 {
+    margin: auto;
+    font-family: 'menlobold';
+    font-size: 20px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-description{
+    margin: auto;
+    font-family: 'menloregular';
+    font-size: 20px;
+    text-align: justify;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-text-tittle-artist{
+    margin: auto;
+    display: flex;
+    color: #F668A8;
+    font-family: 'menlobold';
+    font-size: 30px;
+
+}
+
+.plica-about-text-brand-artist{
+    margin: auto;
+    font-family: 'menlobold';
+    font-size: 20px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+
+.plica-about-2 {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/public-illustration.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/public-illustration-blanco.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    }
+
+}
+
+.plica-about-3 {
+    width: 100%;
+    height: 820px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/smoke-illustration.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 100%;
+    height: 820px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/smoke-illustration-blanco.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    }
+
+}
+
+.plica-about-text-brand-2 {
+    margin: auto;
+    font-family: 'menlobold';
+    font-size: 20px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-about-section-video {
+    padding: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.plica-about-4 {
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/time-illustration.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 100%;
+    height: 700px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/time-illustration-blanco.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    }
+
+}
+
+/* ----- Contact Section ------ */
+
+.plica-section-contact {
+    display: block;
+    margin: auto;
+}
+
+.plica-contact-1 {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/illustration-6.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/illustration-6-blanco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+    }
+
+}
+
+.plica-contact-text-brand {
+    margin: auto;
+    font-family: 'menlobold';
+    font-size: 30px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-contact-description {
+    display: block;
+    margin: auto;
+    width: 70%;
+    font-family: 'menloitalic';
+    font-size: 20px;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-instagram {
+    position: relative;
+    top: -50px;
+    width: 12%;
+    height: 30px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/instagram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    position: relative;
+    top: -50px;
+    width: 12%;
+    height: 30px;
+    margin: auto;
+    align-items: flex-end;
+    background-image: url("../image/instagram-blanco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+
+    }
+}
+
+
+
+.plica-contact-instagram {
+    color: black;
+    text-decoration: none;
+
+    body.dark &{
+        color: $blanco;
+    }
+}
+
+.plica-contact-instagram > :hover {
+    color: #F668A8;
+
+    body.dark &{
+        color: $rosa;
+    }
+
+}
+
+/* ------- Shop section ------- */
+
+.plica-shop {
+    padding: 1em;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.plica-shop-1 {
+    display: block;
+    margin: auto;
+    width: 300px;
+}
+
+.plica-shop-1 {
+    width: 80%;
+    height: 500px;
+    background-image: url("../image/ilustracion-shop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    body.dark &{
+    width: 80%;
+    height: 500px;
+    background-image: url("../image/ilustracion-shop-blanco.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: transparent;
+    transition: 0.3s ease all;
+    border: none;
+    outline: none;
+
+    }
+}
+
+.plica-shop-text {
+    margin: auto;
+    display: block;
+    font-family: 'menlobold';
+    font-size: 30px;
+
+    body.dark &{
+        color:$blanco;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .plica-press-text-4 {
+        margin-left: 0;
+    }
+
+    .plica-intro-img-logo {
+        margin-top: -400px;
+        margin-left: 20px;
+    }
+
+    .switch {
+        margin-top: -400px;
+        margin-left: 20px;
+    }
+
+    .switch-1{
+        width: 60px;
+    }
+
+    .plica-press-text-1{
+        width: 100%;
+    }
+
+    .plica-about-1{
+        height: 400px;
+
+        body.dark &{
+            height: 400px;
+        }
+    }
+
+    .plica-about-text-tittle{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .plica-about-text-brand{
+        text-align: center;
+    }
+
+    .plica-about-2{
+        height: 400px;
+
+        body.dark &{
+            height: 400px;
+        }
+    }
+
+
+    .plica-about-text-tittle-1{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .plica-about-text-brand-1{
+        text-align: center;
+    }
+
+    .plica-about-3{
+        height: 400px;
+
+        body.dark &{
+            height: 400px;
+        }
+    }
+
+    .plica-about-text-tittle-artist{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .plica-about-text-brand-artist{
+        text-align: center;
+    }
+
+    .plica-about-4{
+        height: 400px;
+
+        body.dark &{
+            height: 400px;
+        }
+    }
+
+    .plica-shop-1{
+        width: 100%;
+        background-size: 70%;
+        margin: 0;
+
+        body.dark &{
+        width: 100%;
+        background-size: 70%;
+        margin: 0;
+        }
+    }
+
+    .plica-shop-text{
+        margin: 0;
+    }
+
+}
+
+
+

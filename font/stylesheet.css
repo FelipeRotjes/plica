@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'menlobold';
+    src: url('menlo-bold-webfont.woff2') format('woff2'),
+         url('menlo-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'menloitalic';
+    src: url('menlo-italic-webfont.woff2') format('woff2'),
+         url('menlo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'menloitalic';
+    src: url('menlo-italic-webfont.woff2') format('woff2'),
+         url('menlo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'menloregular';
+    src: url('menlo-regular-webfont.woff2') format('woff2'),
+         url('menlo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
